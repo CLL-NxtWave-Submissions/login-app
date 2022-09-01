@@ -9,6 +9,12 @@ export default class Home extends Component {
     isLoggedIn: false,
   }
 
+  onLoginToggle = () => {
+    this.setState(previousLoginState => ({
+      isLoggedIn: !previousLoginState.isLoggedIn,
+    }))
+  }
+
   render() {
     const {isLoggedIn} = this.state
 
@@ -16,7 +22,11 @@ export default class Home extends Component {
       <div className="login-app-bg-container">
         <div className="content-container">
           <Message isUserLoggedIn={isLoggedIn} />
-          {isLoggedIn ? <Logout /> : <Login />}
+          {isLoggedIn ? (
+            <Logout onLogout={this.onLoginToggle} />
+          ) : (
+            <Login onLogin={this.onLoginToggle} />
+          )}
         </div>
       </div>
     )

@@ -6,12 +6,12 @@
 }
 
 .content-container {
-  background-image: linear-gradient(to bottom, #2b2c49, #ffffff, #b5b9ff);
+  background-image: linear-gradient(to bottom, #2b2c49, #b5b9ff);
   border-radius: 0.6rem;
   font-family: 'Roboto';
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 7rem;
 }

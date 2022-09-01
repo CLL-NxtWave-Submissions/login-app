@@ -1,0 +1,17 @@
+.login-app-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content-container {
+  background-image: linear-gradient(to bottom, #2b2c49, #ffffff, #b5b9ff);
+  border-radius: 0.6rem;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
